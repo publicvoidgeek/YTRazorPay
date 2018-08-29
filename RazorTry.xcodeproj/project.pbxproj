@@ -12,9 +12,11 @@
 		47A5E3D01FD1A451005793D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A5E3CE1FD1A451005793D0 /* Main.storyboard */; };
 		47A5E3D21FD1A451005793D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A5E3D11FD1A451005793D0 /* Assets.xcassets */; };
 		47A5E3D51FD1A451005793D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A5E3D31FD1A451005793D0 /* LaunchScreen.storyboard */; };
+		B143D02941A6F4847662C931 /* Pods_RazorTry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717EC9116330B35916C740CF /* Pods_RazorTry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E17B039B188F440CB171EE5 /* Pods-RazorTry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RazorTry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RazorTry/Pods-RazorTry.debug.xcconfig"; sourceTree = "<group>"; };
 		47A5E3C71FD1A451005793D0 /* RazorTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RazorTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A5E3CA1FD1A451005793D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47A5E3CC1FD1A451005793D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		47A5E3D11FD1A451005793D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47A5E3D41FD1A451005793D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A5E3D61FD1A451005793D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54380E539A49F10B8FED94DA /* Pods-RazorTry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RazorTry.release.xcconfig"; path = "Pods/Target Support Files/Pods-RazorTry/Pods-RazorTry.release.xcconfig"; sourceTree = "<group>"; };
+		717EC9116330B35916C740CF /* Pods_RazorTry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RazorTry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B143D02941A6F4847662C931 /* Pods_RazorTry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EE7842CB43947ED704D6989 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E17B039B188F440CB171EE5 /* Pods-RazorTry.debug.xcconfig */,
+				54380E539A49F10B8FED94DA /* Pods-RazorTry.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		47A5E3BE1FD1A451005793D0 = {
 			isa = PBXGroup;
 			children = (
 				47A5E3C91FD1A451005793D0 /* RazorTry */,
 				47A5E3C81FD1A451005793D0 /* Products */,
+				1EE7842CB43947ED704D6989 /* Pods */,
+				81E8906B11D8EB29CBBDC0A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = RazorTry;
 			sourceTree = "<group>";
 		};
+		81E8906B11D8EB29CBBDC0A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				717EC9116330B35916C740CF /* Pods_RazorTry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47A5E3D91FD1A451005793D0 /* Build configuration list for PBXNativeTarget "RazorTry" */;
 			buildPhases = (
+				C6776FE0969AD657F13CDEB6 /* [CP] Check Pods Manifest.lock */,
 				47A5E3C31FD1A451005793D0 /* Sources */,
 				47A5E3C41FD1A451005793D0 /* Frameworks */,
 				47A5E3C51FD1A451005793D0 /* Resources */,
+				093BE9A2731133E1F3FF4294 /* [CP] Embed Pods Frameworks */,
+				567BF6F29D834F59FB345652 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		093BE9A2731133E1F3FF4294 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RazorTry/Pods-RazorTry-frameworks.sh",
+				"${PODS_ROOT}/razorpay-pod/Pod/Razorpay.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Razorpay.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RazorTry/Pods-RazorTry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		567BF6F29D834F59FB345652 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RazorTry/Pods-RazorTry-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6776FE0969AD657F13CDEB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RazorTry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47A5E3C31FD1A451005793D0 /* Sources */ = {
@@ -272,9 +353,11 @@
 		};
 		47A5E3DA1FD1A451005793D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E17B039B188F440CB171EE5 /* Pods-RazorTry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC89CM487H;
 				INFOPLIST_FILE = RazorTry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DEF.RazorTry;
@@ -286,9 +369,11 @@
 		};
 		47A5E3DB1FD1A451005793D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54380E539A49F10B8FED94DA /* Pods-RazorTry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VC89CM487H;
 				INFOPLIST_FILE = RazorTry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DEF.RazorTry;
